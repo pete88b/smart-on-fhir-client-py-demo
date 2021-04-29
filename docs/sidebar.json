@@ -1,7 +1,7 @@
 {
   "smart_on_fhir_client_py_demo": {
     "Overview": "/",
-    "module name here": "core.html",
+    "Core": "core.html",
     "Hello World flask app": "flask_hello_world.html",
     "Flask app from smart-on-fhir/client-py/README.md": "flask_client_py_readme.html"
   }

@@ -38,7 +38,8 @@ jupyter notebook
 ### If you want to run demo notebooks using google colab
 
 - Open [this notebook](https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/blob/main/index.ipynb) in colab
-- We'll add more demo notebooks when they are ready (o:
+- Open [_flask_hello_world_colab.ipynb](https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/blob/main/_flask_hello_world_colab.ipynb) in colab
+- Open [51_flask_client_py_readme.ipynb](https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/blob/main/51_flask_client_py_readme.ipynb) in colab
 
 The cell below will install the fhirclient if you're running in colab.
 
