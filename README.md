@@ -2,7 +2,7 @@
 > Demo the python SMART on FHIR client.
 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/index.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/blob/main/index.ipynb)
 
 Using [client-py](https://github.com/smart-on-fhir/client-py), this project aims to provide some simple demos to help people get started with the python client.
 
@@ -37,7 +37,7 @@ jupyter notebook
 
 ### If you want to run demo notebooks using google colab
 
-- Open [this notebook](https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/index.ipynb) in colab
+- Open [this notebook](https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/blob/main/index.ipynb) in colab
 - We'll add more demo notebooks when they are ready (o:
 
 The cell below will install the fhirclient if you're running in colab.
@@ -209,9 +209,9 @@ print_resource(bundle, indent=2, length=200)
 ```
 
     {
-      "id": "86c89458-1f53-4bd0-83bd-d804c8301ab4",
+      "id": "5d16c5f5-8fa0-4d4a-8510-b592d17d833e",
       "meta": {
-        "lastUpdated": "2021-04-29T08:57:19.536-04:00",
+        "lastUpdated": "2021-04-29T09:40:02.182-04:00",
         "versionId": "1"
       },
       "entry": [

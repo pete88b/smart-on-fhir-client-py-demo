@@ -4,8 +4,6 @@ __all__ = ['smart_defaults', 'app', 'index', 'callback', 'logout', 'reset']
 
 # Cell
 import logging
-try: from smart_on_fhir_client_py_demo.core import *
-except: from core import *
 from fhirclient import client
 from fhirclient.models.medication import Medication
 from fhirclient.models.medicationrequest import MedicationRequest

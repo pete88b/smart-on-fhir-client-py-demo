@@ -31,20 +31,24 @@ nb_path: "51_flask_client_py_readme.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="TODO">TODO<a class="anchor-link" href="#TODO"> </a></h1><ul>
-<li>find a replacement for Beaker/flaskbeaker - if we need one</li>
-<li>fix <code>from smart_on_fhir_client_py_demo.? import ?</code><ul>
-<li><code>ImportError: attempted relative import with no known parent package</code></li>
-</ul>
-</li>
-</ul>
+<p><a href="https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/blob/main/51_flask_client_py_readme.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Getting-started">Getting started<a class="anchor-link" href="#Getting-started"> </a></h1><p>Please see index.ipynb and set things up to run on your own machine.</p>
+<h1 id="Getting-started">Getting started<a class="anchor-link" href="#Getting-started"> </a></h1><p>You can run this notebook</p>
+<ul>
+<li><a href="https://colab.research.google.com/github/pete88b/smart-on-fhir-client-py-demo/blob/main/51_flask_client_py_readme.ipynb">in colab</a> or<ul>
+<li>Feel free to ignore the "Start the app", "Convert this notebook" and "Run the app locally" sections</li>
+</ul>
+</li>
+<li>on your own machine<ul>
+<li>Please see index.ipynb and set things up to run on your own machine.</li>
+</ul>
+</li>
+</ul>
 <p>See also: <a href="https://github.com/smart-on-fhir/client-py">https://github.com/smart-on-fhir/client-py</a></p>
 
 </div>
@@ -120,30 +124,10 @@ nb_path: "51_flask_client_py_readme.ipynb"
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">smart</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">FHIRClient</span><span class="p">(</span><span class="n">settings</span><span class="o">=</span><span class="n">smart_defaults</span><span class="p">)</span>
-<span class="n">resource_to_string</span><span class="p">(</span><span class="n">_get_patients</span><span class="p">(</span><span class="n">smart</span><span class="p">)[:</span><span class="mi">5</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">_get_patients</span><span class="p">(</span><span class="n">smart</span><span class="p">):</span> <span class="k">assert</span> <span class="n">p</span><span class="o">.</span><span class="n">id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="c1"># TODO: write a better test</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;Patient {&#34;id&#34;: &#34;history-1001&#34;, &#34;meta&#34;: {&#34;lastUpdated&#34;: &#34;2020-11-15T19:52:00.676-05:00&#34;, &#34;securit ...&#39;,
- &#39;Patient {&#34;id&#34;: &#34;54cd03d31c704327aae493302b6cde88&#34;, &#34;meta&#34;: {&#34;lastUpdated&#34;: &#34;2021-01-22T10:48:34. ...&#39;,
- &#39;Patient {&#34;id&#34;: &#34;bac66735217842a0b839fed35a7a1fc4&#34;, &#34;meta&#34;: {&#34;lastUpdated&#34;: &#34;2021-01-22T10:48:34. ...&#39;,
- &#39;Patient {&#34;id&#34;: &#34;500377072fa14833bf38b55dfbab37cf&#34;, &#34;meta&#34;: {&#34;lastUpdated&#34;: &#34;2021-01-22T10:48:34. ...&#39;,
- &#39;Patient {&#34;id&#34;: &#34;1c36a99a220c4cb884e50a24f2674e65&#34;, &#34;meta&#34;: {&#34;lastUpdated&#34;: &#34;2021-01-22T10:48:35. ...&#39;]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -167,7 +151,7 @@ nb_path: "51_flask_client_py_readme.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="index" class="doc_header"><code>index</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L88" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>index</code>()</p>
+<h4 id="index" class="doc_header"><code>index</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L86" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>index</code>()</p>
 </blockquote>
 <p>The app's main page.</p>
 
@@ -199,7 +183,7 @@ nb_path: "51_flask_client_py_readme.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="callback" class="doc_header"><code>callback</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L135" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>callback</code>()</p>
+<h4 id="callback" class="doc_header"><code>callback</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L133" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>callback</code>()</p>
 </blockquote>
 <p>OAuth2 callback interception.</p>
 
@@ -231,7 +215,7 @@ nb_path: "51_flask_client_py_readme.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="logout" class="doc_header"><code>logout</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L147" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>logout</code>()</p>
+<h4 id="logout" class="doc_header"><code>logout</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L145" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>logout</code>()</p>
 </blockquote>
 
 </div>
@@ -262,7 +246,7 @@ nb_path: "51_flask_client_py_readme.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="reset" class="doc_header"><code>reset</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L153" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>reset</code>()</p>
+<h4 id="reset" class="doc_header"><code>reset</code><a href="https://github.com/pete88b/smart_on_fhir_client_py_demo/tree/main/smart_on_fhir_client_py_demo/flask_client_py_readme.py#L151" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>reset</code>()</p>
 </blockquote>
 
 </div>
@@ -310,8 +294,9 @@ nb_path: "51_flask_client_py_readme.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">notebook2script</span>
-<span class="n">notebook2script</span><span class="p">(</span><span class="s1">&#39;51_flask_client_py_readme.ipynb&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">IN_COLAB</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">notebook2script</span>
+    <span class="n">notebook2script</span><span class="p">(</span><span class="s1">&#39;51_flask_client_py_readme.ipynb&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -337,7 +322,7 @@ nb_path: "51_flask_client_py_readme.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Run-the-flask-app">Run the flask app<a class="anchor-link" href="#Run-the-flask-app"> </a></h2><p>Now we can run <code>python smart_on_fhir_client_py_demo/flask_client_py_readme.py</code> from the command line and hit</p>
+<h2 id="Run-the-app-locally">Run the app locally<a class="anchor-link" href="#Run-the-app-locally"> </a></h2><p>Now we can run <code>python smart_on_fhir_client_py_demo/flask_client_py_readme.py</code> from the command line and hit</p>
 <ul>
 <li><a href="http://localhost:8000/">http://localhost:8000/</a></li>
 </ul>
@@ -345,6 +330,44 @@ nb_path: "51_flask_client_py_readme.ipynb"
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Run-the-app-in-colab">Run the app in colab<a class="anchor-link" href="#Run-the-app-in-colab"> </a></h2><p>The following cell will only run if you're in colab, where you'll see output like</p>
+
+<pre><code> * Serving Flask app "__main__" (lazy loading)
+ ...
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): bin.equinox.io:443
+...
+DEBUG:urllib3.connectionpool:http://localhost:4040 "GET /api/tunnels HTTP/1.1" 200 779
+ * Running on http://35c09c8e5eb5.ngrok.io
+ * Traffic stats available on http://127.0.0.1:4040</code></pre>
+<p>Hit the <code>ngrok.io</code> link to see the app - none of the localhost or 127.0.0.1 links will work</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">IN_COLAB</span><span class="p">:</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">flask_ngrok</span> <span class="kn">import</span> <span class="n">run_with_ngrok</span>
+    <span class="n">run_with_ngrok</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
