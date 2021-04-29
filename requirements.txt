@@ -1,7 +1,7 @@
 nbdev #1.1.14
 git+https://github.com/smart-on-fhir/client-py.git #latest
 Flask #1.1.2
-Beaker #1.11.0
+#Beaker #1.11.0
 #Jinja2==2.11.3
 #MarkupSafe==0.23
 #Werkzeug==0.14.1
