@@ -5,6 +5,7 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"resource_to_string": "00_core.ipynb",
          "print_resource": "00_core.ipynb",
          "create_app": "50_flask_hello_world.ipynb",
+         "IN_COLAB": "51_flask_client_py_readme.ipynb",
          "smart_defaults": "51_flask_client_py_readme.ipynb",
          "app": "51_flask_client_py_readme.ipynb",
          "index": "51_flask_client_py_readme.ipynb",
