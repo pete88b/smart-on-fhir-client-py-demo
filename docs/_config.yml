@@ -63,4 +63,4 @@ plugins:
     - jekyll-remote-theme
     
 remote_theme: fastai/nbdev-jekyll-theme
-baseurl: /smart_on_fhir_client_py_demo/
+baseurl: /smart-on-fhir-client-py-demo/
