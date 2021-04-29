@@ -1,0 +1,118 @@
+{
+  "id": "f001",
+  "meta": {
+    "lastUpdated": "2021-02-01T14:47:43.050-05:00",
+    "versionId": "5"
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001                        \n      </p><p><b>identifier</b>: 738472983 (USUAL), ?? (USUAL)                        \n      </p><p><b>active</b>: true                        \n      </p><p><b>name</b>: Pieter van de Heuvel                         \n      </p><p><b>telecom</b>: ph: 0648352638(MOBILE), p.heuvel@gmail.com(HOME)                        \n      </p><p><b>gender</b>: male                        \n      </p><p><b>birthDate</b>: Nov 17, 1944                        \n      </p><p><b>deceased</b>: false                        \n      </p><p><b>address</b>: Van Egmondkade 23 Amsterdam 1024 RJ NLD (HOME)                        \n      </p><p><b>maritalStatus</b>: Getrouwd                                 \n        <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code 'M' = 'Married', given as 'Married'})</span></p><p><b>multipleBirth</b>: true                        \n      </p><h3>Contacts</h3><table><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Emergency Contact                                                 \n            <span>(Details : {http://terminology.hl7.org/CodeSystem/v2-0131 code 'C' = 'Emergency Contact)</span></td><td>Sarah Abels </td><td>ph: 0690383372(MOBILE)</td></tr></table><h3>Communications</h3><table><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td>Nederlands                                                 \n            <span>(Details : {urn:ietf:bcp:47 code 'nl' = 'Dutch', given as 'Dutch'})</span></td><td>true</td></tr></table><p><b>managingOrganization</b>:                                 \n        <a>Burgers University Medical Centre</a></p></div>",
+    "status": "generated"
+  },
+  "active": true,
+  "address": [
+    {
+      "city": "PARIS",
+      "line": [
+        "123 rue de la liberte"
+      ],
+      "state": "ILE DE FRANCE"
+    }
+  ],
+  "birthDate": "1994-11-17",
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "nl",
+            "display": "Dutch",
+            "system": "urn:ietf:bcp:47"
+          }
+        ],
+        "text": "Nederlands"
+      },
+      "preferred": true
+    }
+  ],
+  "contact": [
+    {
+      "name": {
+        "family": "Abels",
+        "given": [
+          "Sarah"
+        ],
+        "use": "usual"
+      },
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "C",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131"
+            }
+          ]
+        }
+      ],
+      "telecom": [
+        {
+          "system": "phone",
+          "use": "mobile",
+          "value": "0690383372"
+        }
+      ]
+    }
+  ],
+  "deceasedBoolean": false,
+  "gender": "male",
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+      "use": "usual",
+      "value": "738472983"
+    },
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+      "use": "usual"
+    }
+  ],
+  "managingOrganization": {
+    "display": "Burgers University Medical Centre",
+    "reference": "Organization/f001"
+  },
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "M",
+        "display": "Married",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
+      }
+    ],
+    "text": "Getrouwd"
+  },
+  "multipleBirthBoolean": true,
+  "name": [
+    {
+      "family": "van de Heuvel",
+      "given": [
+        "Pieter"
+      ],
+      "suffix": [
+        "MSc"
+      ],
+      "use": "usual"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "use": "mobile",
+      "value": "0648352638"
+    },
+    {
+      "system": "email",
+      "use": "home",
+      "value": "p.heuvel@gmail.com"
+    }
+  ],
+  "resourceType": "Patient"
+}
