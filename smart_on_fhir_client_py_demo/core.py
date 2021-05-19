@@ -7,10 +7,11 @@ import json
 
 # Cell
 def resource_to_string(resource, indent=None, length=100):
-    if isinstance(resource, list): return [resource_to_string(r) for r in resource]
+    if isinstance(resource, list): return [resource_to_string(r,indent,length) for r in resource]
     s=f'{resource.__class__.__name__} {json.dumps(resource.as_json(), indent=indent)}'
     return f'{s[:length-4]} ...' if len(s)>length else s
 
 # Cell
 def print_resource(resource, indent=None, length=90):
+    if isinstance(resource, list): return [print_resource(r,indent,length) for r in resource]
     print(resource_to_string(resource, indent, length))

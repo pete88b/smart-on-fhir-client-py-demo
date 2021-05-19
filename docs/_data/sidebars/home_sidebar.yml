@@ -18,6 +18,12 @@ entries:
     - output: web,pdf
       title: Flask app from smart-on-fhir/client-py/README.md
       url: flask_client_py_readme.html
+    - output: web,pdf
+      title: Lauren
+      url: FHIR-resource-to-csv.html
+    - output: web,pdf
+      title: Transforming FHIR resources
+      url: vulcan_rwd_2021_May.html
     output: web
     title: smart_on_fhir_client_py_demo
   output: web
